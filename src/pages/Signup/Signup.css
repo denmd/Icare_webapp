@@ -1,0 +1,96 @@
+.signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust the columns as needed */
+    height: 95vh; /* Adjust the height as needed */
+  }
+  
+  .signup_section {
+    position: absolute;
+    width: 37rem;
+    height: 682px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    background:#DEB298;
+    opacity: 1.7;
+    justify-content: center;
+    align-items: center;
+    line-height: 33px;
+
+    
+  }
+  .signup_head{
+    font-size: 30px;
+    line-height: 5px;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .signup_inp_section {
+    position: absolute;
+width: 780px;
+height: 680px;
+left: 590px;
+top: 0px;
+background-color:white  ;
+border-radius: 40px 0px 0px 40px;
+display: flex;
+flex-direction: column;
+
+ 
+  }
+
+  
+
+  .signup_section p{
+    font-size: 70px; /* Adjust the font size as needed */
+    font-family: -webkit-body;
+    font-weight:bold;
+    float: right;
+
+    
+  }
+  .signup_inp_section h2{
+    font-size: 40px; /* Adjust the font size as needed */
+    font-family: -webkit-body;
+    font-weight:bold;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .form_div{
+
+    width: 100%;
+    height: 35rem;
+    margin-left: 80px;
+  }
+  .name_div,.gen_age,.ema_pass,.create-btn{
+    float: left;
+
+    height: 3rem;
+    margin-top: 70px;
+ 
+  }
+  .create-btn{
+   
+    margin-left:150px;
+  }
+  .form_div button{
+     width: 450px;
+     height: 2.5rem;
+    background-color: #DEB298;
+    border-radius: 15px;
+    border: none;
+  }
+ .form_div label, .form_div input,.form_div select{
+    font-size: 18px;
+    width:200px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: black;
+
+    
+ }
+  
+  
+ 

@@ -1,0 +1,89 @@
+.optical_ParentDiv {
+    width:100%;
+    min-height: 100vh;
+    background-color:#ffffff;
+    position:absolute;
+    
+  }
+  .optical_banner{
+    margin-top: 170px;
+    text-align: left;
+  }
+  .h1{
+    margin-left: 35px
+  }
+  
+  .location{
+    display: flex;
+    align-items: center;
+    width:390px;
+    height: 50px;
+    background-color: #bba190;
+    margin-left: 150px;
+    margin-top: 30px;
+    border-radius: 8px;
+    
+  }
+  .location_icon{
+    margin-left: 12px;
+    margin-top: 0.7px;
+  }
+  .loaction_detail{
+    margin-left: 25px;
+  }
+  .main_opt_box{
+    width:94%;
+    min-height: 30rem;
+    margin-left: 40px;
+    margin-top: 60px;
+   
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .sub_box_1,.sub_box_2{
+    width:94%;
+    height: 18rem;
+    display: flex;
+    flex-direction:row;
+
+  }
+  .left_1_box,.right_1_box{
+    width:40%;
+    height:11rem;
+    display: flex;
+    flex-direction:column;
+    background-color: #bba190 ;
+    margin-left: 75px;
+    margin-top: 30px;
+    border-radius: 10px;
+   
+
+  }
+  .pha_icon{
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  .name_icon{
+    display: flex;
+    flex-direction:row;
+  }
+  .address_phone{
+    margin-top: 2px;
+    margin-left: 35px;
+    padding:10px;
+    line-height: 2em;
+  }
+  .opt_details,.opt_name{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .opt_details{
+    display: block;
+  }
+ .pho_icon{
+    float:left;
+    margin-left: 13px;
+ }

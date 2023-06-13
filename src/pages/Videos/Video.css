@@ -1,0 +1,50 @@
+.video_ParentDiv {
+    width:100%;
+    min-height: 100vh;
+    background-color:#ffffff;
+    position:absolute;
+    
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .video_banner{
+    margin-top: 170px;
+    text-align: left;
+  }
+  .h1{
+    margin-left: 35px
+  }
+  .video_boxes{
+    min-height: 35rem;
+    margin: 30px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .vid_box_1,.vid_box_2,.vid_box_3{
+    background-color:#bba190;
+    margin-top: 30px;
+    width: 90%;
+    height: 15rem;
+    border-radius: 10px;
+    display: flex;
+    border-color:black  ;
+    
+   
+  }
+  .vid_img{
+    width:30%;
+  }
+ .vid_desc{
+    width: 70%;
+    background-color:antiquewhite;
+    line-height: 40px;
+    border-radius: 10px;
+
+ }
+ .vid_desc p{
+  margin-left: 60px;
+
+ }
+  

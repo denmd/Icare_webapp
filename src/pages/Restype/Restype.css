@@ -1,0 +1,62 @@
+.res_ParentDiv {
+    width:100%;
+    height:64rem;
+    background-color:#ffffff;
+    position:fixed;
+    
+  }
+  .restype_banner{
+    margin-top: 170px;
+    text-align: left;
+  }
+  .h1{
+    margin-left: 35px
+  }
+  .res_boxes{
+    height: 23em;
+    display: flex;
+    flex-direction:row;
+    
+  }
+  .box1,.box2,.box3{
+    width:250px;  
+    height: 330px; 
+    display: flex;
+    background-color:#bba190;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 20px;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  
+    
+  }
+  .newsimg,.articleimg,.videoimg{
+    width:150px;
+    height: 150px;
+    margin-top: 50px;
+    display: block;
+    
+  }
+  .articleimg{
+    width:150px;
+    height: 150px;
+    margin-top: 50px;
+    display: block;
+  }
+  .newsimg{
+    display: block;
+    margin-top: 46px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .article,.video,.news{
+    display: block;
+    margin-top: 35px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,90 @@
+.headermaindiv {
+    padding: 10px;
+    background: linear-gradient(to right,#ca8c66,#c5987c);
+    position: fixed;
+    width: 98.4vw;
+    z-index: 999;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  
+  .headersubdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+  }
+  
+ .appName{
+  font-family: cursive;
+  color: black;
+ }
+ .header_content_div{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+  
+ 
+ }
+
+  
+  
+  .direct_home {
+    float: right;
+   background-color: transparent;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+  }
+  .direct_profile_page{
+    width: 100%;
+    background-color: transparent;
+    margin-right: 60px;
+    
+    
+  }
+ 
+  .profile_btn{
+    width: 90%;
+    border:none;
+    background-color:transparent;
+    align-items: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+  }
+  .direct_profile_page,.profile_btn{
+    text-decoration: none;
+  }
+  
+
+  .direct_logout{
+    width: 350px;
+    margin-right: 100px;
+    font-size: 25px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: red;
+  }
+  .text{
+    margin-left: 8px;
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .placeSearch,
+    .productSearch,
+    .sellMenu {
+      display: none;
+    }
+  }

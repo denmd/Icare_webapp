@@ -1,0 +1,97 @@
+
+  
+.login_section1 {
+    position: absolute;
+    width: 40rem;
+    height: 682px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    background:#DEB298;
+    justify-content: center;
+    align-items: center;
+  
+    
+    
+  }
+  
+  .welc_text{
+    width:75%;
+    font-size: 30px;
+    line-height: 5px;
+    text-emphasis: center;
+    margin-right: 130px;
+  }
+  .welc_text p{
+    font-size: 70px; /* Adjust the font size as needed */
+    font-family: -webkit-body;
+    font-weight:bold;
+    float: right;
+  }
+  .welc_text h1{
+    float: right;
+
+  }
+.login_section2 {
+position: absolute;
+width: 780px;
+height: 680px;
+left: 590px;
+background-color:white  ;
+border-radius: 23px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  
+  }
+.login_txt{
+    font-size:39px;
+    font-weight:bolder;
+    text-align: center;
+  }
+.form-container{
+    width: 50%;
+    height: 30rem;
+    margin-left: 190px;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+}
+.form{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+  
+    padding: 20px;
+   
+}
+.email,.password{
+    margin-top:20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.form label{
+    float: left;
+}
+.form input{
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 2rem;
+    border-radius: 8px;
+}
+.login_btn{
+    width:10rem;
+    height: 2rem;
+    background-color:#DEB298;
+    align-self: center;
+    border-radius: 8px;
+    border: none;
+  }
+  .register-link{
+    margin: 0;
+    line-height: normal;
+  }
+::-webkit-scrollbar{
+    display: none;
+}

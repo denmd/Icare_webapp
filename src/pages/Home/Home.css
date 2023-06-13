@@ -1,0 +1,64 @@
+.home_ParentDiv {
+  width:100%;
+    height:64rem;
+    background-color:#ffffff;
+    position:fixed;
+    
+  }
+ .home_banner{
+  width: 100%;
+  height: 40rem;
+
+  margin-top: 12rem;
+ }
+  .home_banner h1{
+    margin-left: 35px
+  }
+  .content_boxes{
+    width: 100%;
+    height: 23em;
+    display: flex;
+    flex-direction:row;
+    
+   
+    
+  }
+  .eye_box,.res_box,.hos_box,.opt_box,.rec_box{
+                      width:250px;  
+                      height: 330px; 
+                      display: flex;
+                      background-color:#bba190;
+                      margin-top: 30px;
+                      margin-left: 20px;
+                      border-radius: 20px;
+                      border:none;
+                      flex-direction: column;
+                      align-items: center;
+                    }
+                    
+                    .eyeimg,.resimg,.hosimg,.optimg,.recimg{
+                      width:150px;
+                      height: 150px;
+                      margin-top: 50px;
+                      display: block;
+                      
+                    }
+                    .resimg{
+                      width:150px;
+                      height: 150px;
+                      margin-top: 50px;
+                      display: block;
+                    }
+                    .eyetest{
+                      display: block;
+                      margin-top: 35px;
+                      font-size: 23px;
+                      font-weight: bold;
+                    }
+                    .resource,.hospital,.optical,.record{
+                      display: block;
+                      margin-top: 35px;
+                      font-size: 23px;
+                      font-weight: bold;
+ }
+                    

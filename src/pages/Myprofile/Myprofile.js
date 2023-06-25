@@ -1,7 +1,7 @@
 import "../Myprofile/Myprofile.css"
 import Header from "../../components/Header"
 import { ReactComponent as ProfileIcon } from "../../logos/profileicon.svg"
-import { Navigate, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 function Myprofile(){
    const navigate=useNavigate()
    const Directupdprofile=()=>{

@@ -3,13 +3,8 @@ import Header from "../../components/Header";
 import {ReactComponent as Location}  from "../../logos/location.svg";
 import {ReactComponent as Pharmacyicon}  from "../../logos/pharmacy.svg";
 import {ReactComponent as Phoneicon}  from "../../logos/phone.svg";
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import mapboxgl from 'mapbox-gl';
-import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiZGVubWQiLCJhIjoiY2xqYWJucXc1MDl5NTNqdWlqejZzczQxaiJ9.cv5TdfWag9Sb0zKBWIUAag'
 function  Hospital(){
   
 

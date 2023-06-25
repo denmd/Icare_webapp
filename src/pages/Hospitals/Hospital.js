@@ -3,11 +3,15 @@ import Header from "../../components/Header";
 import {ReactComponent as Location}  from "../../logos/location.svg";
 import {ReactComponent as Pharmacyicon}  from "../../logos/pharmacy.svg";
 import {ReactComponent as Phoneicon}  from "../../logos/phone.svg";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import mapboxgl from 'mapbox-gl';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 
-
-
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGVubWQiLCJhIjoiY2xqYWJucXc1MDl5NTNqdWlqejZzczQxaiJ9.cv5TdfWag9Sb0zKBWIUAag'
 function  Hospital(){
+  
 
     return(
         <div className="hospital_ParentDiv">
@@ -16,11 +20,20 @@ function  Hospital(){
           </div>
         <div className="hospital_banner">
          <div className="headline">
+          
          <h1 className="h1">Nearby Hospitals</h1>
          </div>
          <div className="location">
             <span className="location_icon"><Location></Location></span>
-            <h3 className="loaction_detail">You are currently at Kottyam</h3>
+        <form >
+        <input
+          className="location_detail"
+          type="text"
+          placeholder="Enter place name"
+  
+        />
+        <button type="submit">Search</button>
+      </form>
          </div>
          <div className="main_hos_box">
             <div className="subhos_box_1">
@@ -71,7 +84,7 @@ function  Hospital(){
          </div>
          </div>
         </div>
-        
+
       );
     }
     

@@ -1,9 +1,37 @@
 
 import "../Article/Article.css"
 import Header from "../../components/Header";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Articleview from "./Articleview";
 
 
 function  Article(){
+
+    const [articles, setArticles] = useState([]);
+    useEffect(() => {
+      const fetchArticle = async () => {
+        try {
+          const response = await axios.get(
+            'https://newsapi.org/v2/everything',
+            {
+              params: {
+                q: 'eye disease',
+                apiKey: 'f87b0b64324e4038976401cc4b8d7b44',
+                pageSize: 20,
+              },
+            }
+          );
+          setArticles(response.data.articles);
+          console.log(response.data.articles)
+        } catch (error) {
+          console.error('Error fetching news:', error);
+        }
+      };
+  
+      fetchArticle();
+    }, []);
+   
 
 return(
     <div className="article_ParentDiv">
@@ -13,33 +41,21 @@ return(
      
       <div class="article-container">
       <div className="article_head"><h2 >Articles</h2></div>
+      {articles.map((arti) => (
         
-        <div class="articles">
-            <h1>19/12/2022</h1>
-            <h2>CDC</h2>
-         <p>Common Eye Disorders and Diseases </p>
-           
+        <div class="articles" >
+            <h3>{arti.publishedAt}</h3>
+            <h2>{arti.author}</h2>
+            <br/>
+            <div><h1>{arti.title} </h1></div>
+         
+         <p>{arti.description}</p>
+         <a href={arti.url} target="_blank" rel="noopener noreferrer" className="read-more">
+            Read More
+          </a>
         </div>
-        <div class="articles">
-            <h1>14/01/2021</h1>
-            <h2>Cleveland Clinic</h2>
-            <p>Common Eye Diseases and Vision Problem </p>
-           </div>
-        <div class="articles">
-            <h1>09/11/2016</h1>
-            <h2>MedlinePlus</h2>
-            <p>Eye Diseases|Glaucoma</p>
-           </div>
-        <div class="articles">
-            <h1 >15/10/2022</h1>
-            <h2>WebMD</h2>
-            <p>Top Causes of eye problems</p>
-           </div>
-         <div class="articles">
-            <h1 >01/08/2018</h1>
-            <h2>AAO</h2>
-            <p>Dry Eye Disease</p>
-           </div>
+        ))}
+    
            </div>
     </div>
     

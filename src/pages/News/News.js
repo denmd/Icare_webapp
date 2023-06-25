@@ -1,9 +1,33 @@
 
 import "../News/News.css"
 import Header from "../../components/Header";
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 function  News(){
+  const [news, setNews] = useState([]);
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const response = await axios.get(
+          'https://newsapi.org/v2/everything',
+          {
+            params: {
+              q: 'eye diseases',
+              sources: 'healthline,fox-news,bbc-news,cnn,abc-news',
+              apiKey: 'f87b0b64324e4038976401cc4b8d7b44',
+              pageSize: 30,
+            },
+          }
+        );
+        setNews(response.data.articles);
+        console.log(response.data.articles)
+      } catch (error) {
+        console.error('Error fetching news:', error);
+      }
+    };
 
+    fetchNews();
+  }, []);
 return(
     <div className="news_ParentDiv">
       <div className="headerdiv">
@@ -11,26 +35,27 @@ return(
       </div>
     <div className="news_banner">
         <h2>News</h2>
+
     <div class="news-container">
+{news.map((newses)=>(
         <div class="news_desc">
-            <h2>The Hindu</h2>
-         <p> Dry eye disease is increasing due to a steep rise-
-            in use of digital devices </p>
-           
-        </div>
-        <div class="news_desc">
-            <h2>The Financial Express</h2>
-            <p> ENTOD Pharmaceuticals launches drops for-
-                inflammatory dry eye disease </p>
-           </div>
-        <div class="news_desc">
-            <h2>HCP Live</h2>
-            <p> Procedural Therapies for Dry Eye Disease</p>
-           </div>
-           <div class="news_desc">
-            <h2>The Health Site</h2>
-            <p> Gendered Burden Of Eye Diseases</p>
-           </div>
+          <div>
+           <h1>{newses.title}</h1>
+            <h2>{newses.source.name}</h2>
+           <br/>
+         <p> {newses.description} </p>
+         </div>
+          <div className="read-more_nw">
+          <a href={newses.url} target="_blank" rel="noopener noreferrer">
+            Read More
+          </a>
+          </div>
+          </div>
+        
+   ))}
+   
+     
+       
      </div>
      </div>
     </div>

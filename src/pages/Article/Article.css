@@ -1,6 +1,6 @@
 .article_ParentDiv {
     width:100%;
-    min-height: 100vh;
+    min-height: 250vh;
     background-color:#ffffff;
     position:absolute;
     
@@ -14,19 +14,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    min-height: 170vh;
     margin-left: 5px;
     column-gap: 10px;
+    margin-top: 130px;
   }
   .article_head{
  
         align-self: flex-start;
         margin-left: 90px;
         font-size: 25px;
+  
   }
   .articles{
     width: 75%;
-    height: 15%;
+    height: 10%;
     background-color:bisque;
     border: 1px solid #663232;
     margin: 9px;
@@ -44,10 +46,13 @@
 
   .articles h1{
     
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     align-self: flex-end;
+    margin-top:50px;
     margin-left: 20px;
+ 
+
   
   }
 
@@ -58,7 +63,17 @@
   font-style: normal;
   align-self: center;
   margin-right: 30px;
-
-
+}
+.articles h3{
+  float: left;
+  font-size: 20px;
+  font-style: normal;
+  align-self: center;
+margin-left: 20px;
+}
+.read-more{
+  margin-bottom: 30px;
+ color: black;
+ float: right;
 }
 

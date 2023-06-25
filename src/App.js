@@ -16,7 +16,7 @@ import News from './pages/News/News';
 import Video from './pages/Videos/Video';
 import Article from './pages/Article/Article';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import Articleview from './pages/Article/Articleview';
+
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
     <Route path="/news" element={<News/>} />
     <Route path="/video" element={<Video/>} />
     <Route path="/article" element={<Article/>} />
-    <Route path="/articleview" element={<Articleview/>} />
+   
 
 
       </Routes>

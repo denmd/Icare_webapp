@@ -3,7 +3,7 @@ import "../Article/Article.css"
 import Header from "../../components/Header";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Articleview from "./Articleview";
+
 
 
 function  Article(){

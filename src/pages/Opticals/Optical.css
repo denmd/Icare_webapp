@@ -87,3 +87,9 @@
     float:left;
     margin-left: 13px;
  }
+ .no_results{
+  margin-left: 40rem;
+  margin-top: 9rem;
+  font-size: larger;
+  font-weight: bold;
+ }

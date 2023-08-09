@@ -28,8 +28,10 @@
     margin-left: 12px;
     margin-top: 0.7px;
   }
-  .loaction_detail{
+  .location_detail{
     margin-left: 25px;
+    width: 240px;
+    height:20px
   }
   .main_hos_box{
     width:94%;
@@ -49,7 +51,7 @@
   }
   .lefthos_1_box,.righthos_1_box{
     width:40%;
-    height:11rem;
+    height:15rem;
     display: flex;
     flex-direction:column;
     background-color: #bba190 ;
@@ -83,4 +85,13 @@
  .pho_icon{
     float:left;
     margin-left: 13px;
+ }
+ .search{
+  border: transparent;
+  margin-right: -100px;
+  background-color: transparent;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  
  }

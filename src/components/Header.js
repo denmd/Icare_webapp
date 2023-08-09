@@ -1,6 +1,7 @@
 import "../components/Header.css"
 import Logout from "../logos/Logout";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function  Header(){
 const navigate=useNavigate()
@@ -10,6 +11,10 @@ const DirectHome=()=>{
 const Directprofile=()=>{
   navigate('/profile')
 }
+const handleLogout = async () => {
+ navigate("/login")
+  }
+
 return(
     <div className="headermaindiv">
       <div className="headersubdiv">
@@ -28,7 +33,7 @@ return(
          
 
         </div>
-           <button className='direct_logout' >
+           <button className='direct_logout'onClick={handleLogout} >
             <span><Logout></Logout></span>
             <span className="text"> Logout</span>
             </button>
